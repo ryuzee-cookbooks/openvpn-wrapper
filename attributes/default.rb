@@ -1,11 +1,12 @@
+# Listen IP 
 default["openvpn"]["local"]   = "0.0.0.0" 
 default["openvpn"]["proto"]   = "tcp"
 default["openvpn"]["port"]    = "1194"
 default["openvpn"]["type"]    = "server"
 default["openvpn"]["subnet"]  = "10.8.0.0"
 default["openvpn"]["netmask"] = "255.255.0.0"
-#default["openvpn"]["gateway"] = "vpn.#{node["domain"]}"
-default["openvpn"]["gateway"] = "33.33.33.10"
+# Endpoint
+default["openvpn"]["gateway"] = "vpn.example.com"
 default["openvpn"]["log"]     = "/var/log/openvpn.log"
 default["openvpn"]["key_dir"] = "/etc/openvpn/keys"
 default["openvpn"]["signing_ca_key"]  = "#{node["openvpn"]["key_dir"]}/ca.key"

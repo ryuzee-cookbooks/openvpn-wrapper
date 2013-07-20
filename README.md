@@ -5,17 +5,11 @@ Wrapper for OpenVPN
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
 #### packages
-- `toaster` - openvpn-wrapper needs toaster to brown your bagel.
+- `yum` 
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
-
-e.g.
 #### openvpn-wrapper::default
 <table>
   <tr>
@@ -25,10 +19,10 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['openvpn-wrapper']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['openvpn']['gateway']</tt></td>
+    <td>String</td>
+    <td>Your gateway</td>
+    <td><tt>vpn.example.com</tt></td>
   </tr>
 </table>
 
