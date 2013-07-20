@@ -20,7 +20,7 @@ default["openvpn"]["routes"] = [
 default["openvpn"]["script_security"] = 1
 default["openvpn"]["user"] = "nobody"
 case platform
-when "redhat", "centos", "fedora"
+when "redhat", "centos", "fedora", "amazon"
   default["openvpn"]["group"] = "nobody"
 else
   default["openvpn"]["group"] = "nogroup"
