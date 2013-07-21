@@ -12,11 +12,7 @@ default["openvpn"]["key_dir"] = "/etc/openvpn/keys"
 default["openvpn"]["signing_ca_key"]  = "#{node["openvpn"]["key_dir"]}/ca.key"
 default["openvpn"]["signing_ca_cert"] = "#{node["openvpn"]["key_dir"]}/ca.crt"
 default["openvpn"]["routes"] = [
-    "push route 10.0.0.0 255.255.0.0",
-    "push route 10.0.1.0 255.255.0.0",
-    "push route 10.0.10.0 255.255.0.0",
-    "push route 10.0.11.0 255.255.0.0",
-    "push route 10.0.90.0 255.255.0.0",
+    "push route 10.0.0.0 255.255.0.0"
 ]
 default["openvpn"]["script_security"] = 1
 default["openvpn"]["user"] = "nobody"
