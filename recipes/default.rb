@@ -14,7 +14,7 @@ include_recipe "openvpn::default"
 include_recipe "openvpn::users"
 
 case node[:platform]
-when "redhat", "centos", "fedora", "amazon"
+when "redhat", "centos", "fedora"
   execute "iptables -t nat -A POSTROUTING -s #{node["openvpn"]["subnet"]}/#{node["openvpn"]["netmask"]} -o eth0 -j MASQUERADE" do
     action :run
   end
