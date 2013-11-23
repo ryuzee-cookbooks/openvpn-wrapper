@@ -2,10 +2,11 @@
 # Cookbook Name:: openvpn-wrapper
 # Recipe:: default
 #
-# Copyright 2013, YOUR_COMPANY_NAME
+# Copyright 2013, Ryutaro YOSHIBA 
 #
-# All rights reserved - Do Not Redistribute
-#
+# This software is released under the MIT License.
+# http://opensource.org/licenses/mit-license.php
+
 case node[:platform]
 when "redhat", "centos", "fedora"
   include_recipe 'yum::epel'
@@ -23,3 +24,5 @@ when "redhat", "centos", "fedora"
     action :run
   end
 end
+
+# vim: filetype=ruby.chef

@@ -31,3 +31,5 @@ default["openvpn"]["key"]["province"]  = "Kanagawa"
 default["openvpn"]["key"]["city"]      = "Yokohama"
 default["openvpn"]["key"]["org"]       = "Ryuzee.com"
 default["openvpn"]["key"]["email"]     = "ryuzee@gmail.com"
+
+# vim: filetype=ruby.chef
