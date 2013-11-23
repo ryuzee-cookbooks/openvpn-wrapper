@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
   config.vm.hostname = "openvpn-wrapper-berkshelf"
-  config.vm.box = "CentOS-6.4-x86_64-ja"
-  config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
+  config.vm.box = "opscode-centos-6.4"
+  config.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box"
   config.vm.network :private_network, ip: "33.33.33.10"
   # config.vm.provider :virtualbox do |vb|
   #   # Don't boot with headless mode
