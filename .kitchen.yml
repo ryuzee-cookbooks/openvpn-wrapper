@@ -29,5 +29,5 @@ platforms:
 suites:
 - name: default
   run_list: 
-    - "recipe[analog::default]"
+    - "recipe[openvpn-wrapper::default]"
   attributes: {}
