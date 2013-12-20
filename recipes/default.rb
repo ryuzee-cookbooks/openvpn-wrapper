@@ -9,7 +9,7 @@
 
 case node[:platform]
 when "redhat", "centos", "fedora"
-  include_recipe 'yum::epel'
+  include_recipe 'yum-epel'
 end
 include_recipe "openvpn::default"
 include_recipe "openvpn::users"
